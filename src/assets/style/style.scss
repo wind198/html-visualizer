@@ -1,0 +1,90 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+
+@import "../../../node_modules/bootstrap/scss/variables";
+$theme-colors: (
+  "primary": $blue-300,
+  "secondary": $gray-200,
+  "success": $green-300,
+  "info": $cyan-300,
+  "warning": $yellow-300,
+  "danger": $red-300,
+  "light": $white,
+  "dark": $black,
+);
+$utilities-bg-colors: (
+  "primary": $blue-300,
+  "secondary": $gray-200,
+  "success": $green-300,
+  "info": $cyan-300,
+  "warning": $yellow-300,
+  "danger": $red-300,
+  "light": $white,
+  "dark": $black,
+);
+$utilities-text-colors: (
+  "primary": $blue-300,
+  "secondary": $gray-200,
+  "success": $green-300,
+  "info": $cyan-300,
+  "warning": $yellow-300,
+  "danger": $red-300,
+  "light": $white,
+  "dark": $black,
+  "white": $white,
+);
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+@import "../../../node_modules/bootstrap/scss/forms";
+
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+.text-truncate {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slide-down-enter,
+.slide-down-leave-to {
+  transform: translate(0, -100%);
+}
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-left-enter,
+.slide-left-leave-to {
+  transform: translateX(100%);
+}
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: all 0.3s ease;
+}
+html {
+  font-size: 12px;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.connecting-line {
+  position: absolute;
+  border: 1px solid rgba(75, 74, 74, 0.4);
+  transform-origin: top left;
+  z-index: 1;
+}
+.diagram {
+  position: relative;
+}
+.node {
+  z-index: 10;
+  min-width: 100px;
+  max-width: 250px;
+}
